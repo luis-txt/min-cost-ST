@@ -1,0 +1,35 @@
+SECTION Graph
+Nodes 14
+Edges 19
+E 1 2 10
+E 2 3 15
+E 3 4 10
+E 4 5 5
+E 5 6 12
+E 6 7 8
+E 7 8 7
+E 8 9 10
+E 9 10 11
+E 10 11 5
+E 11 12 6
+E 12 13 14
+E 13 14 7
+E 14 1 20
+E 2 7 17
+E 4 9 12
+E 6 11 15
+E 8 13 10
+E 3 12 25
+END
+
+SECTION Terminals
+Terminals 6
+T 2
+T 4
+T 7
+T 9
+T 12
+T 14
+END
+
+EOF
