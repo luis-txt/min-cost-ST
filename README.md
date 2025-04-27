@@ -19,7 +19,7 @@ or on Ubuntu/Debian use (not tested):
 sudo apt install glpk libglpk-dev
 ```
 
-Afterwards, the complete C program can be compiled by typing `make` from the *Exam* directory.
+Afterwards, the complete C program can be compiled by typing `make` from the *min-cost-ST* directory.
 
 ## Algorithms
 After compilation, the resulting *min-cost-ST* executable is able to execute the following algorithms:
@@ -75,7 +75,7 @@ The following scripts are provided.
 
 ### create_characteristic_data
 Processes the directory *graphs* (the PACE instances) and computes the respective characteristics in the *graph_characteristics* directory for each graph instance. This includes the number of vertices |V|, the number of edges |E|, the number of terminals |R|, the density of the graph (computed by |E| / (|V| choose 2)), the maximum degree and the standard-deviation of the edge costs.
-Run with the following command from the *Exam* directory.
+Run with the following command from the *min-cost-ST* directory.
 ```
 python3 scripts/create_characteristic_data.py
 ```
@@ -85,7 +85,7 @@ Without arguments, a selection of plots in the *.pgd* format is created. Optiona
 - `--tracks` lets you select specific tracks from the PACE data (default is all three tracks).
 - `--output_dir` lets you specify an output directory (default is *plots*).
 - `--pdf` creates pdf plots instead of using the file *.pgd* format.
-Run with the following command from the *Exam* directory.
+Run with the following command from the *min-cost-ST* directory.
 ```
 python3 scripts/create_plots.py [FLAGS]
 ```
@@ -96,7 +96,7 @@ Reads the graph characteristics (under *graph_characteristics*), the optimum cos
 - Minimum number of edges |E| on which for the respective algorithms failed to compute a result
 - Average and maximum running time for each algorithm
 - Average and maximum cost difference for each algorithm
-Run with the following command from the *Exam* directory.
+Run with the following command from the *min-cost-ST* directory.
 ```
 python3 scripts/read_extreme_values.py
 ```
@@ -104,7 +104,7 @@ python3 scripts/read_extreme_values.py
 ### run_benches
 - Executes the algorithms on the PACE instances and collects the benchmarking data (memory consumption, running time and cost of the resulting steiner tree).
 - Runs each algorithm on each instance at most 1,000 times and at least once if the five minutes time constraint is enough. If another run is estimated to fit in the remaining time of the five minutes constraint, the algorithm is executed multiple times again and the resulting data is averaged across runs.
-Run with the following command from the *Exam* directory.
+Run with the following command from the *min-cost-ST* directory.
 ```
 python3 scripts/run_benches.py
 ```
