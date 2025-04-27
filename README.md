@@ -1,10 +1,10 @@
 # min-cost-ST
-Implementation of multiple algorithms for calculating a *undirected (minimum cost) steiner tree*.
+Implementation of multiple algorithms for calculating an *undirected (minimum cost) steiner tree*.
 
 ## Installation
 Clone the reposetory along with the [PACE instances from 2018](https://github.com/PACE-challenge/SteinerTree-PACE-2018-instances) (using SSH) by running:
 ```
-git clone git@gitlab.inf.uni-konstanz.de:ag-storandt/ae-24/luis.flak.git
+git clone git@github.com:luis-txt/min-cost-ST.git
 ```
 
 For creation of an executable, a modern C compiler as GCC 14.2.1 20250110 (Red Hat 14.2.1-7) or Clang 19.1.7 (Fedora 19.1.7-2.fc41) is needed.
