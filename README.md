@@ -1,5 +1,6 @@
 # min-cost-ST
 Implementation of multiple algorithms for calculating an *undirected (minimum cost) steiner tree*.
+The original papers of the algorithms, approaches and all other references can be found in the report file: [report_flak.pdf](report_flak.pdf).
 
 ## Installation
 Clone the reposetory along with the [PACE instances from 2018](https://github.com/PACE-challenge/SteinerTree-PACE-2018-instances) (using SSH) by running:
